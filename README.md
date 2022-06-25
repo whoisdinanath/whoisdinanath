@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 
 <h1 align="center">Hi There <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"> This is Bibek Poudel</h1>
 
-<h3 align="center">A tech geek and enthusiasth interested in developing softwares and webapp.</h3>
+<h3 align="center">A tech geek and enthusiast interested in developing softwares and webapp.</h3>
 
 ## 🙋‍♂️ About Me
 - 🔭 I’m currently working on Python, JS, Django and OpenCV.
