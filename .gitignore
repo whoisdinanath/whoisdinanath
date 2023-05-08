@@ -1,0 +1,37 @@
+*
+.*
+!.*
+.*/
+!.config/
+.config/*
+# Track all dot files in the home directory
+!.zshrc
+!/.config/alacritty/
+!/.config/alacritty/**
+!/.config/nvim/
+!/.config/nvim/**
+!/.config/neofetch/
+!/.config/neofetch/**
+!/.config/rofi/
+!/.config/rofi/**
+!/.config/qtile/
+!/.config/qtile/**
+!/.config/scripts/
+!/.config/scripts/**
+!/.config/starship/
+!/.config/starship/**
+!/.config/tmux/
+!/.config/tmux/*
+
+.X*
+.xsession*
+.vim*
+.node*
+.python*
+.less*
+.zcomp*
+.bash_history
+.bash_profile
+.bash_logout
+# Add more files here as needed
+
