@@ -44,11 +44,11 @@ Welcome to my GitHub profile! I'm Bibek Poudel, a passionate engineer who loves 
 
 ## 📊 GitHub Stats...
 
-
+ - [Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical)
 <a>
     <img align="center" src="https://github-readme-stats.vercel.app/api?username=whoisdinanath&show_icons=true&theme=radical" />
 </a>
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical)
+
 
 Thanks for stopping by and checking out my profile. Don't forget to follow me and stay tuned for more exciting projects!
 
