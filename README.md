@@ -39,8 +39,9 @@ Welcome to my GitHub profile! I'm Bibek Poudel, a passionate engineer who loves 
 - [Website](mbibek.dev)
 
 <!-- ## ⚡ Fun fact about me...
-
 - I love  -->
+![Have Fun](f0b3cebe-450d-34ab-d29b-915a4400f8b4.svg)
+
 
 ## 📊 GitHub Stats...
 
@@ -53,5 +54,5 @@ Welcome to my GitHub profile! I'm Bibek Poudel, a passionate engineer who loves 
 Thanks for stopping by and checking out my profile. Don't forget to follow me and stay tuned for more exciting projects!
 
 
-![](f0b3cebe-450d-34ab-d29b-915a4400f8b4.svg)
+
 
