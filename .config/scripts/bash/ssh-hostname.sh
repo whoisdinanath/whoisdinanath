@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 current_tty="$(echo $1 | rev | cut -d'/' -f1 | rev)"
 ssh_host=$(ps -t "$current_tty" | sed -n -e 's/^.*\(ssh\) //p' | sed -n -e 's/^.*@//p' | cut -f1 -d' ')

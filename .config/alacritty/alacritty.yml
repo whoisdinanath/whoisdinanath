@@ -1,18 +1,31 @@
-window:
-  padding:
-    x: 5
-    y: 5
-  class:
-    instance: Alacritty
-    general: Alacirtty
+# Colors (One Darker)
+colors:
+    primary:
+      # background: "#0d0d0d"
+        background: "#11121D"
+        foreground: "#D8DEE9"
+    normal:
+        black: "#3B4252"
+        red: "#D54646"
+          # green: "#23D18B"
+        green: "#9ece6a"
+        yellow: "#D7BA7D"
+        blue: "#569CD6"
+        magenta: "#C586C0"
+        cyan: "#29B8DB"
+        white: "#abb2bf"
+    bright:
+        black: "#3B4252"
+        red: "#D54646"
+        # green: "#23D18B"
+        green: "#9ece6a"
+        yellow: "#D7BA7D"
+        blue: "#569CD6"
+        magenta: "#C586C0"
+        cyan: "#29B8DB"
+        white: "#ECEFF4"
 
-  opacity: 0.9
-
-
-scrolling:
-  histroy: 10000
-  multiplier: 3
-
+    window.opacity : 0.3
 
 font:
   normal:
@@ -27,68 +40,48 @@ font:
   bold_italic:
     family: hack
     style: BoldItalic
-  
-draw_bold_text_with_bright_colors: true
 
+    size: 10.0
 
-schemes:
-  # Tokyo Night theme, based on both:
-  #   https://github.com/ghifarit53/tokyonight-vim
-  #   https://github.com/enkia/tokyo-night-vscode-theme
-  tokyo-night: &tokyo-night
-    # Default colors
-    primary:
-      background: '0x1a1b26'
-      foreground: '0xa9b1d6'
+    offset:
+        x: 1
+        y: 4
+    glyph_offset:
+        x: 0
+        y: 0
 
-    # Normal colors
-    normal:
-      black:   '0x32344a'
-      red:     '0xf7768e'
-      green:   '0x9ece6a'
-      yellow:  '0xe0af68'
-      blue:    '0x7aa2f7'
-      magenta: '0xad8ee6'
-      cyan:    '0x449dab'
-      white:   '0x787c99'
+    builtin_box_drawing: true
 
-    # Bright colors
-    bright:
-      black:   '0x444b6a'
-      red:     '0xff7a93'
-      green:   '0xb9f27c'
-      yellow:  '0xff9e64'
-      blue:    '0x7da6ff'
-      magenta: '0xbb9af7'
-      cyan:    '0x0db9d7'
-      white:   '0xacb0d0'
+window:
+    opacity: 0.65
 
-  tokyo-night-storm: &tokyo-night-storm
-    # Default colors
-    primary:
-      background: '0x24283b'
-      foreground: '0xa9b1d6'
+    dimensions:
+        columns: 112
+        lines: 28
 
-    # Normal colors
-    normal:
-      black:   '0x32344a'
-      red:     '0xf7768e'
-      green:   '0x9ece6a'
-      yellow:  '0xe0af68'
-      blue:    '0x7aa2f7'
-      magenta: '0xad8ee6'
-      cyan:    '0x449dab'
-      white:   '0x9699a8'
+    padding:
+        x: 0
+        y: 0
 
-    # Bright colors
-    bright:
-      black:   '0x444b6a'
-      red:     '0xff7a93'
-      green:   '0xb9f27c'
-      yellow:  '0xff9e64'
-      blue:    '0x7da6ff'
-      magenta: '0xbb9af7'
-      cyan:    '0x0db9d7'
-      white:   '0xacb0d0'
+    history: 10000
+    multiplier: 10
+    # opacity: 0.4
 
-colors: *tokyo-night
+    draw_bold_text_with_bright_colors: true
+    semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+    save_to_clipboard: true
+    live_config_reload: true
+
+key_bindings:
+    - { key: V, mods: Control|Shift, action: Paste }
+    - { key: C, mods: Control|Shift, action: Copy }
+    - { key: Key0, mods: Control, action: ResetFontSize }
+    - { key: Equals, mods: Control, action: IncreaseFontSize }
+    - { key: Minus, mods: Control, action: DecreaseFontSize }
+      # - { key: F11, command: { program: "/bin/sh", args: ["-c", "wmctrl -ir $(xdotool getwindowfocus) -b toggle,fullscreen" ] } }
+
+shell:
+    program: /usr/bin/zsh
+    args:
+        - --login 
+    # open tmux by default

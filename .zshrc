@@ -19,24 +19,15 @@ fi
 
 # start tmux on opening terminal
 
-if [[ -z "$TMUX" ]] && [[ "$SSH_CONNECTION" == "" ]]; then
-  tmux attach-session -t local_tmux || tmux new-session -s local_tmux
-fi
+#if [[ -z "$TMUX" ]] && [[ "$SSH_CONNECTION" == "" ]]; then
+#  tmux attach-session -t local_tmux || tmux new-session -s local_tmux
+#fi
 # if [[ -z "$TMUX" ]] && [[ "$SSH_CONNECTION" == "" ]]; then
 #   tmux attach-session -t local_tmux || tmux new-session -s local_tmux
 # fi
 
-
-
-# for nmcli wifi
-alias wifi-status="nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -c 5-" 
-alias wifi-list="nmcli -t -f active,ssid dev wifi | cut -c 5-"
-alias wifi-connect="nmcli dev wifi --ask connect"
-
-alias connect-wifi="~/.config/scripts/wifi.sh"
-
-alias vim="nvim"
-alias svim="sudo nvim"
+# aliases directory : ~/.config/scripts/bash/aliases.sh
+source ~/.config/scripts/bash/aliases.sh
 
 eval "$(starship init zsh)"
 

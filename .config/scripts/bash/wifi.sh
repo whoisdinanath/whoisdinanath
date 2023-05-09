@@ -1,3 +1,4 @@
+#!/bin/zsh
 # connect wifi using nmcli and ask for ssid and password as input
 
 read -p "SSID: " SSID
