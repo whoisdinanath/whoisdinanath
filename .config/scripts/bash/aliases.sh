@@ -20,6 +20,11 @@ alias vim="nvim"
 alias svim="sudo nvim"
 
 
+# directory changing
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+
 # make and cd into directory
 function mkcd() {
     mkdir -p -- "$1" &&

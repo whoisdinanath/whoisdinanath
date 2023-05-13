@@ -17,13 +17,14 @@ from qtile_extras import widget
 from qtile_extras.widget.decorations import BorderDecoration
 
 
-
-
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
-myBrowser = "firefox"  # My browser of choice
+myBrowser = "firefox"     # My browser of choice
+fileExplorer = "caja"    #My file manager of choice
 reboot = "reboot"         # Reboot command
 shutdown = "shutdown now"  # Shutdown command
+# myConfig = "~/.config/qtile/config.py" # The Qtile config file location
+
 
 keys = [
     # The essentials
@@ -46,6 +47,11 @@ keys = [
     Key([mod], "v",
         lazy.spawn(myTerm + " -e nvim"),
         desc='NeoVim'
+        ),
+    Key([mod], "e",
+        lazy.spawn(fileExplorer),
+        desc="File Manager"
+
         ),
 
     Key([mod], "Tab",
@@ -72,7 +78,15 @@ keys = [
         lazy.shutdown(),
         desc='Shutdown Qtile'
         ),
+    Key(
+        [mod], "s",
+        # run scrot to take a screenshot
+        # name the file in format year-month-day-hour-minute-second.png
+        # save it to ~/Pictures/Screenshots
+        lazy.spawn("scrot -s ~/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png"),
+        desc='Take a screenshot'
 
+    ),
     # Switch focus to specific monitor (out of three)
     Key([mod], "w",
         lazy.to_screen(0),
@@ -172,8 +186,22 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-")),
 ]
 
-groups = [Group(i) for i in (" ", " ", " " , "󰨞 ",  " ", "󰕼 ", " ",)]
+# workspaces = [
+#     {"name": " ",  "matches": [Match(wm_class=["caja"])]},
+#     {"name": " ",  "matches": [Match(wm_class=["Alacritty"])]},
+#     {"name": " ",  "matches": [Match(wm_class=[""])]},
+#     {"name": "󰨞 ",  "matches": [Match(wm_class=["Visual Studio Code"])]},
+#     {"name": " ",  "matches": [Match(wm_class=["Discord"])]},
+#     {"name": "󰕼 ",  "matches": [Match(wm_class=["VLC media player"])]},
+#     {"name": " ",  "matches": [Match(wm_class=["Firefox"])]},
+# ]
 
+# groups = [Group(**kwargs) for kwargs in workspaces]
+
+# normal workspaces
+groups = [Group(_name) for _name in [" ", " ", " ", "󰨞 ", " ", "󰕼 ", " "]]
+# how to escape this rule
+# https://docs.qtile.org/en/stable/manual/config/groups.html
 
 # Allow MODKEY+[0 through 9] to bind to groups, see https://docs.qtile.org/en/stable/manual/config/groups.html
 # MOD4 + index Number : Switch to Group[index]
@@ -255,7 +283,7 @@ colors = [["#282c34", "#282c34"],
           ["#AD343E", "#AD343E"],
           ]
 
-prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
+prompt = "{0}".format(socket.gethostname().split('.')[0])
 
 ##### DEFAULT WIDGET SETTINGS #####
 widget_defaults = dict(
@@ -270,6 +298,30 @@ extension_defaults = widget_defaults.copy()
 def init_widgets_list():
 
     widgets_list = [
+
+        # display a text for hostname
+        # widget.TextBox(
+        #     text=" ",
+        #     foreground=colors[2],
+        #     background=colors[0],
+        #     fontsize=13,
+        #     margin_y=3,
+        #     margin_x=1,
+        #     padding_y=5,
+        #     padding_x=3,
+        #     borderwidth=3,
+        # ),
+        # widget.TextBox(
+        #     text=prompt,
+        #     foreground=colors[2],
+        #     background=colors[0],
+        #     fontsize=15,
+        #     margin_y=3,
+        #     margin_x=1,
+        #     padding_y=5,
+        #     padding_x=3,
+        #     borderwidth=3,
+        # ),
 
         widget.GroupBox(
             font="Ubuntu Bold",
@@ -294,7 +346,8 @@ def init_widgets_list():
 
         ),
 
-    
+
+
 
         widget.WindowName(
             foreground=colors[6],
@@ -307,7 +360,7 @@ def init_widgets_list():
         ),
         # widget.Net(
         #     interface="wlan0",
-            
+
         #     format='Net: {down} {up}',
         #     foreground=colors[7],
         #     background=colors[0],
@@ -438,10 +491,10 @@ floating_layout = layout.Floating(float_rules=[
     Match(title='Confirmation'),      # tastyworks exit box
     Match(title='Qalculate!'),        # qalculate-gtk
     Match(wm_class='kdenlive'),       # kdenlive
-    Match(wm_class='pinentry-gtk-2'),# GPG key password entry
-    Match(title='BiblioCrypt'), #BiblioCrypt Window
-    Match(title='Test'), #Test window
-    Match(title='ImGUI')  #ImGUI window
+    Match(wm_class='pinentry-gtk-2'),  # GPG key password entry
+    Match(title='BiblioCrypt'),  # BiblioCrypt Window
+    Match(title='Test'),  # Test window
+    Match(title='ImGUI')  # ImGUI window
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"
