@@ -1,6 +1,6 @@
-require'staline'.setup {
-
-	sections = {
+local sta = require("staline")
+  sta.setup({
+          	sections = {
 		left = {
 			' ', 'right_sep_double', '-mode', 'left_sep_double', ' ',
 			'right_sep', '-file_name', 'left_sep', ' ',
@@ -14,24 +14,23 @@ require'staline'.setup {
 		}
 	},
 
-
 	defaults={
 		fg = "#986fec",
-		cool_symbol = "  ",
-		left_separator = "",
-		right_separator = "",
+		cool_symbol = "  ",
+		left_separator = "",
+		right_separator = "",
 		-- line_column = "%l:%c [%L]",
 		true_colors = true,
 		line_column = "[%l:%c]  %p%% ",
 		-- font_active = "bold"
-
 	},
-	mode_colors = {
+mode_colors = {
 		n  = "#181a23",
 		i  = "#181a23",
 		ic = "#181a23",
 		c  = "#181a23",
-		v  = "#181a23"       -- etc
+		v  = "#181a23",       -- etc
+		t  = "#181a23",       -- etc
 	}
 	,
 		mode_icons = {
@@ -43,3 +42,4 @@ require'staline'.setup {
 		-- a terminal symbol for terminal mode
 	},
 }
+  )

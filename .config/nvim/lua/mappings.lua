@@ -25,6 +25,9 @@ map("n", "<S-TAB>", ":BufferLineCyclePrev<CR>")
 -- Nvim tree
 map("n", "<leader>a", ":NvimTreeToggle<CR>")
 
+-- muscle memory escape to jj
+map("i", "jj", "<ESC>")
+
 -- Telescope
 map("n", "<leader>F", ":Telescope find_files <CR>")
 map("n", "<leader>fl", ":Telescope live_grep <CR>")
@@ -34,10 +37,20 @@ map("n", "<leader>b", ":Telescope buffers<CR>")
 -- Window splitting
 map("n", "<leader>v", ":vsplit<CR>")
 map("n", "<leader>h", ":split<CR>")
-map("n", "<A-[>", "<C-w>h")
-map("n", "<C-w>j", "<C-w>j")
-map("n", "<C-w>k", "<C-w>k")
-map("n", "<A-]>", "<C-w>l")
+map("n", "<leader>q", ":q<CR>")
+map("n", "<leader>o", ":only<CR>")
+map("n", "<leader>=", ":resize +5<CR>")
+map("n", "<leader>-", ":resize -5<CR>")
+map("n", "<leader>+", ":vertical resize +5<CR>")
+map("n", "<leader>_", ":vertical resize -5<CR>")
+
+
+
+
+map("n", "<C-h>", "<C-w>h")
+map("n", "<C-j>", "<C-w>j")
+map("n", "<C-k>", "<C-w>k")
+map("n", "<C-l>", "<C-w>l")
 map("n", "<leader>x", "<C-w>c")
 
 -- nvterm (terminal)

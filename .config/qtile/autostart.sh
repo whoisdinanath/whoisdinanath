@@ -12,3 +12,8 @@ picom &
 # find /usr/share/backgrounds/dtos-backgrounds/ -type f | shuf -n 1 | xargs xwallpaper --stretch &
 # 3. Uncomment to set wallpaper with nitrogen
 nitrogen --restore &
+
+# get the battery percentage and time at startup
+battery=$(acpi | awk '{print $4}' | tr -d ',')
+# store this value in a file in /tmp so that it can be accessed by other scripts
+echo $battery > /tmp/battery
