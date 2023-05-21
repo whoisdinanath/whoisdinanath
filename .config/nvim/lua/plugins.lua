@@ -30,6 +30,14 @@ lazy.setup(
 
         -- Autopairings --
         {
+            "github/copilot.vim",
+            name = "copilot",
+            lazy = false,
+            config = function()
+                vim.cmd("let g:copilot#enable_mappings = 0")
+            end
+        },
+        {
             "windwp/nvim-autopairs",
             name = "nvim-autopairs",
             lazy = false,

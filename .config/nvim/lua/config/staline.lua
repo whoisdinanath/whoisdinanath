@@ -23,6 +23,19 @@ local sta = require("staline")
 		true_colors = true,
 		line_column = "[%l:%c]  %p%% ",
 		-- font_active = "bold"
+		        left_separator = "",
+        expand_null_ls = false,
+
+
+        inactive_color = "#303030",
+        inactive_bgcolor = "none",
+        font_active = "none",          -- bold,italic etc.
+        true_colors = false,
+
+        branch_symbol = " ",
+        mod_symbol = "  ",
+        lsp_client_symbol = " ",
+        null_ls_symbol = "",
 	},
 mode_colors = {
 		n  = "#181a23",
@@ -41,5 +54,23 @@ mode_colors = {
 		v  =  " " ,      -- etc
 		-- a terminal symbol for terminal mode
 	},
+	-- file_icons = {
+	-- 	        typescript=' ' , css=' ' , scss=' ' , javascript=' ' , javascriptreact=' ' , html=' ' ,
+    --     python=' ' , java=' ' , markdown=' ' , sh=' ',zsh=' ',
+    --     vim=' ', lua=' ', haskell=' ', conf=' ', ruby=' ', txt=' ',
+    --     rust=' ', cpp=' ', c=' ', go=' ',
+	-- },
+
+	special_table = {
+        NvimTree = { 'NvimTree', ' ' },
+        packer = { 'Packer','󰏓 ' },
+        dashboard = { 'Dashboard', '  ' },
+        help = { 'Help', '󰋖 ' },
+        qf = { "QuickFix", " " },
+        alpha = { "Alpha", "  " },
+        Jaq = { "Jaq", "  "},
+        Fm = { "Fm", "  "},
+        TelescopePrompt = { 'Telescope', "  " },
+    },
 }
   )

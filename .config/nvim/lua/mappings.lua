@@ -44,6 +44,31 @@ map("n", "<leader>-", ":resize -5<CR>")
 map("n", "<leader>+", ":vertical resize +5<CR>")
 map("n", "<leader>_", ":vertical resize -5<CR>")
 
+--  copy to clipboard
+map("v", "<leader>y", '"+y')
+map("n", "<leader>y", '"+y')
+map("v", "<leader>Y", 'gg"+yG')
+
+
+-- paste from clipboard
+map("n", "<leader>p", '"+p')
+map("n", "<leader>P", '"+P')
+
+-- select lines
+map("n", "<leader>sl", "V")
+map("n", "<leader>sh", "V<Home>")
+map("n", "<leader>se", "V<End>")
+map("n", "<leader>sj", "Vj")
+map("n", "<leader>sk", "Vk")
+
+-- move lines
+map("n", "<leader>ml", ":m .+1<CR>==")
+map("n", "<leader>mh", ":m .-2<CR>==")
+map("v", "<leader>ml", ":m '>+1<CR>gv=gv")
+map("v", "<leader>mh", ":m '<-2<CR>gv=gv")
+
+
+
 
 
 

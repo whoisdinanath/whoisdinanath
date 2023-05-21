@@ -14,6 +14,8 @@ alias mappings="~/.config/scripts/bash/cat-mappings.sh"
 alias vim="nvim"
 alias svim="sudo nvim"
 
+# checking the uptime of the system in a human readable format string
+alias up="uptime -p"
 
 # directory changing
 alias ..="cd ../"
@@ -83,6 +85,7 @@ alias push='git push origin'
 alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
+alias addm='git add . && git commit -m'
 
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
