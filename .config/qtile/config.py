@@ -216,12 +216,13 @@ layout_theme = {"border_width": 2,
 
 layouts = [
     # layout.MonadWide(**layout_theme),
+    layout.Spiral(**layout_theme),
     # layout.Bsp(**layout_theme),
     # layout.Stack(stacks=2, **layout_theme),
     # layout.Columns(**layout_theme),
     # layout.RatioTile(**layout_theme),
     # layout.Tile(shift_windows=True, **layout_theme),
-    # layout.VerticalTile(**layout_theme),
+    layout.VerticalTile(**layout_theme),
     # layout.Matrix(**layout_theme),
     # layout.Zoomy(**layout_theme),
     layout.MonadTall(**layout_theme),
@@ -346,17 +347,33 @@ def init_widgets_list():
 
         ),
 
-
-
+        widget.CurrentLayout(
+            foreground=colors[6],
+            background=colors[0],
+            padding=2,
+        ),
 
         widget.WindowName(
             foreground=colors[6],
             background=colors[0],
-            padding=2
+            padding=2,
+            format = '[{name}]'
         ),
+
+
         widget.Systray(
             background=colors[0],
-            padding=2
+            padding=3,
+            icon_size=15,
+        ),
+        widget.Wallpaper(
+            directory='/home/bibek/Wallpaper/png',
+            random_selection=True,
+            foreground=colors[6],
+            background=colors[0],
+            label='󰸉 ',
+            fontsize=12,
+            padding=2,
         ),
         # widget.Net(
         #     interface="wlan0",
@@ -373,18 +390,26 @@ def init_widgets_list():
             backlight_name='intel_backlight',
             brightness_file='brightness',
             max_brightness_file='max_brightness',
-            # change using mouse scroll
-            change_command=None,
-
-            fmt='Br: {}',
+            # fmt='[Br.] {}',
+            font="Jet Brains Mono Nerd Font",
+            fontsize=12,
+            fmt='󰃠 {}',
             step=5,
-            padding=5
+            padding=5,
+            mouse_callbacks={
+                'Button4': lambda: qtile.cmd_spawn('brightnessctl set +5%'),
+                'Button5': lambda: qtile.cmd_spawn('brightnessctl set 5%-'),
+            },
+                            
         ),
 
         widget.Volume(
             foreground=colors[7],
             background=colors[0],
-            fmt='Vol: {}',
+            # fmt='[V] {}',
+            fmt='󰕾 {}',
+            font="Jet Brains Mono Nerd Font",
+            fontsize=12,
             padding=2,
 
         ),
@@ -392,9 +417,12 @@ def init_widgets_list():
         widget.Battery(
             foreground=colors[7],
             background=colors[0],
-            format='B: {char} {percent:2.0%}',
-            charge_char='~',
-            discharge_char='!',
+            format=' {char} {percent:2.0%}',
+            font="Jet Brains Mono Nerd Font",
+            fontsize=12,
+            charge_char='󰂉',
+            full_char='󰂄',
+            discharge_char='󰁾',
             show_short_text=True,
             notify_below=40,
             low_percentage=40,
@@ -494,7 +522,11 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class='pinentry-gtk-2'),  # GPG key password entry
     Match(title='BiblioCrypt'),  # BiblioCrypt Window
     Match(title='Test'),  # Test window
-    Match(title='ImGUI')  # ImGUI window
+    Match(title='ImGUI'),  # ImGUI window
+    Match(title='matplot'),
+    Match(title='matplotlib'),
+    Match(title='test'),
+    Match(title='py'),
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"

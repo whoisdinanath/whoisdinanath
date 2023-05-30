@@ -2,10 +2,10 @@
 # give name of wifi and its status
 alias wifi-status="nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -c 5- | cut -c 1-20"
 # list all networks scanned 
-alias wifi-scan="nmcli dev wifi rescan"
+alias scan-wifi="nmcli dev wifi rescan"
 alias list-wifi="nmcli dev wifi list"
-alias wifi-connect="nmcli dev wifi --ask connect"
-alias connect-wifi="~/.config/scripts/wifi.sh"
+alias connect-wifi="nmcli dev wifi --ask connect"
+# alias connect-wifi="~/.config/scripts/bash/wifi.sh"
 alias qtile-map="cat ~/.config/qtile/config.py | grep Key"
 alias tmux-map="cat ~/.config/tmux/tmux.conf | grep bind-key"
 alias nvim-map='cat ~/.config/nvim/lua/mappings.lua | grep map'

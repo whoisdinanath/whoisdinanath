@@ -52,7 +52,9 @@ mode_colors = {
 		c  = "  ",
 		-- a eye symbol for visual mode
 		v  =  " " ,      -- etc
-		-- a terminal symbol for terminal mode
+	        	-- a terminal symbol for terminal mode
+		-- normal mode in terminal
+		t  = "  ",       -- etc
 	},
 	-- file_icons = {
 	-- 	        typescript=' ' , css=' ' , scss=' ' , javascript=' ' , javascriptreact=' ' , html=' ' ,
@@ -74,3 +76,5 @@ mode_colors = {
     },
 }
   )
+
+

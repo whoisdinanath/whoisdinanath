@@ -25,11 +25,11 @@ colors:
         cyan: "#29B8DB"
         white: "#ECEFF4"
 
-    window.opacity : 0.3
 
 font:
   normal:
-    family: VictorMono Nerd Font
+    family: JetBrains Mono Nerd Font Mono
+    # family: hack
     style: Medium
   bold:
     family: hack
@@ -41,7 +41,7 @@ font:
     family: hack
     style: BoldItalic
 
-    size: 10.0
+    size: 25.0
 
     offset:
         x: 1
@@ -53,7 +53,7 @@ font:
     builtin_box_drawing: true
 
 window:
-    opacity: 0.65
+    opacity: 0
 
     dimensions:
         columns: 112

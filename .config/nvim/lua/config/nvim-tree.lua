@@ -9,14 +9,14 @@ plugin.setup {
     hijack_netrw = true,
     hijack_cursor = true,
     hijack_unnamed_buffer_when_opening = false,
-    sync_root_with_cwd = false,
+    sync_root_with_cwd = true,
     hijack_directories = {
         enable = true,
         auto_open = false,
     },
     update_focused_file = {
         enable = true,
-        update_cwd = false,
+        update_cwd = true,
     },
     view = {
         adaptive_size = false,
@@ -40,7 +40,7 @@ plugin.setup {
             resize_window = true,
         },
         change_dir = {
-            enable = false,
+            enable = flase,
             global = false,
             restrict_above_cwd = true,
         },
