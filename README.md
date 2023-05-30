@@ -21,8 +21,7 @@ Welcome to my GitHub profile! I'm Bibek Poudel, a passionate engineer who loves 
 
 ## 🔭 I’m currently working on...
 
-**Project Name:** Currently working on implementing P2P Kademlia DHT in C++.
-
+**Project Name:** Currently working on [something on networking and distributed system]
 ## 🌱 I’m currently learning...
 
 - Blockchain smart contract and web3 development
