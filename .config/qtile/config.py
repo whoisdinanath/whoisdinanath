@@ -20,11 +20,13 @@ from qtile_extras.widget.decorations import BorderDecoration
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
 myBrowser = "firefox"     # My browser of choice
-fileExplorer = "caja"    #My file manager of choice
+fileExplorer = "caja"       #My file manager of choice
 reboot = "reboot"         # Reboot command
 shutdown = "shutdown now"  # Shutdown command
 # myConfig = "~/.config/qtile/config.py" # The Qtile config file location
 
+def go_to_layout(qtile, index):
+    qtile.current_group.use_layout(index)
 
 keys = [
     # The essentials
@@ -45,13 +47,12 @@ keys = [
         desc='VS Code'
         ),
     Key([mod], "v",
-        lazy.spawn(myTerm + " -e nvim"),
+        lazy.spawn(myTerm + " -e nvim  /home/bibek/.config/qtile/config.py"),
         desc='NeoVim'
         ),
     Key([mod], "e",
         lazy.spawn(fileExplorer),
         desc="File Manager"
-
         ),
 
     Key([mod], "Tab",
@@ -163,6 +164,11 @@ keys = [
         lazy.window.toggle_fullscreen(),
         desc='toggle fullscreen'
         ),
+    # switch to monadtall layout
+    Key([mod, "shift"], "m",
+        lazy.function(go_to_layout, 2),
+        desc='switch to spiral layout'
+    ),
     # Stack controls
     Key([mod, "shift"], "Tab",
         lazy.layout.rotate(),
@@ -364,14 +370,15 @@ def init_widgets_list():
         widget.Systray(
             background=colors[0],
             padding=3,
-            icon_size=15,
+            icon_size=12,
+
         ),
         widget.Wallpaper(
             directory='/home/bibek/Wallpaper/png',
             random_selection=True,
             foreground=colors[6],
             background=colors[0],
-            label='󰸉 ',
+            label=' 󰸉 ',
             fontsize=12,
             padding=2,
         ),
