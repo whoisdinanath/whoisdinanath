@@ -357,6 +357,7 @@ def init_widgets_list():
             foreground=colors[6],
             background=colors[0],
             padding=2,
+            format='({name})'
         ),
 
         widget.WindowName(
@@ -374,7 +375,7 @@ def init_widgets_list():
 
         ),
         widget.Wallpaper(
-            directory='/home/bibek/Wallpaper/png',
+            directory='/home/bibek/Pictures/Wallpaper/best',
             random_selection=True,
             foreground=colors[6],
             background=colors[0],
@@ -424,12 +425,12 @@ def init_widgets_list():
         widget.Battery(
             foreground=colors[7],
             background=colors[0],
-            format=' {char} {percent:2.0%}',
+            format='{char}{percent:2.0%}',
             font="Jet Brains Mono Nerd Font",
             fontsize=12,
-            charge_char='󰂉',
+            charge_char='󱐋',
             full_char='󰂄',
-            discharge_char='󰁾',
+            discharge_char='󱊣 ',
             show_short_text=True,
             notify_below=40,
             low_percentage=40,

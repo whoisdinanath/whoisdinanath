@@ -133,3 +133,5 @@ function mkcd() {
     cd -P -- "$1"
 }
 
+#projector/dual screens
+alias project="xrandr --output HDMI-1  --auto --scale-from 1366x768 --output eDP-1"
