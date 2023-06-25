@@ -1,9 +1,10 @@
 # ~/.zshrc
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
-
+  export FLYCTL_INSTALL="/home/bibek/.fly"
+  export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/home/bibek/.local/bin:$PATH"
-
+export PATH="/home/bibek/bin:$PATH"
 # tab case insensitive
 if [[ -n $commands[compaudit] ]]; then
   compaudit | xargs chmod g-w

@@ -23,6 +23,7 @@ myBrowser = "firefox"     # My browser of choice
 fileExplorer = "caja"       #My file manager of choice
 reboot = "reboot"         # Reboot command
 shutdown = "shutdown now"  # Shutdown command
+wallpaper = "/home/bibek/pictures/Wallpaper/best"
 # myConfig = "~/.config/qtile/config.py" # The Qtile config file location
 
 def go_to_layout(qtile, index):
@@ -84,9 +85,15 @@ keys = [
         # run scrot to take a screenshot
         # name the file in format year-month-day-hour-minute-second.png
         # save it to ~/Pictures/Screenshots
-        lazy.spawn("scrot -s ~/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png"),
+        # name of screenshot is the name of current window
+        lazy.spawn("scrot -s /home/bibek/pictures/Screenshots/Picture'%H%M%S.png'"),
         desc='Take a screenshot'
 
+    ),
+    Key(
+        [mod], "d",
+         lazy.spawn("scrot /home/bibek/pictures/Screenshots/Picture'%H%M%S.png'"),
+        desc='Take a screenshot'
     ),
     # Switch focus to specific monitor (out of three)
     Key([mod], "w",
@@ -375,7 +382,7 @@ def init_widgets_list():
 
         ),
         widget.Wallpaper(
-            directory='/home/bibek/Pictures/Wallpaper/best',
+            directory=wallpaper,
             random_selection=True,
             foreground=colors[6],
             background=colors[0],
@@ -383,6 +390,7 @@ def init_widgets_list():
             fontsize=12,
             padding=2,
         ),
+
         # widget.Net(
         #     interface="wlan0",
 

@@ -10,6 +10,8 @@ alias qtile-map="cat ~/.config/qtile/config.py | grep Key"
 alias tmux-map="cat ~/.config/tmux/tmux.conf | grep bind-key"
 alias nvim-map='cat ~/.config/nvim/lua/mappings.lua | grep map'
 alias mappings="~/.config/scripts/bash/cat-mappings.sh"
+alias als="cat ~/.config/scripts/bash/aliases.sh"
+
 
 alias vim="nvim"
 alias svim="sudo nvim"
@@ -135,3 +137,8 @@ function mkcd() {
 
 #projector/dual screens
 alias project="xrandr --output HDMI-1  --auto --scale-from 1366x768 --output eDP-1"
+
+
+alias conup="nmcli con up"
+alias condown="nmcli con down"
+
