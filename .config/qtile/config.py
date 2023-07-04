@@ -74,11 +74,11 @@ keys = [
         ),
     Key([mod, "shift"], "s",
         lazy.spawn(shutdown),
-        desc='Restart Qtile'
+        desc='Shutdown'
         ),
     Key([mod, "shift"], "q",
         lazy.shutdown(),
-        desc='Shutdown Qtile'
+        desc='Restart Qtile'
         ),
     Key(
         [mod], "s",
@@ -212,7 +212,7 @@ keys = [
 # groups = [Group(**kwargs) for kwargs in workspaces]
 
 # normal workspaces
-groups = [Group(_name) for _name in [" ", " ", " ", "󰨞 ", " ", "󰕼 ", " "]]
+groups = [Group(_name) for _name in [" ", " ", " ", "󰨞 ", " ", "󰕼 ", "󰭹 "]]
 # how to escape this rule
 # https://docs.qtile.org/en/stable/manual/config/groups.html
 

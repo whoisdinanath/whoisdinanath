@@ -136,9 +136,11 @@ function mkcd() {
 }
 
 #projector/dual screens
-alias project="xrandr --output HDMI-1  --auto --scale-from 1366x768 --output eDP-1"
+alias project="xrandr --output HDMI-1  --auto --scale-from 1366x768 --output eDP-1 --off"
+alias extend="xrandr --output HDMI-1 --auto --scale-from 1366x768 --output eDP-1 --auto --right-of HDMI-1"
 
+alias mirror="xrandr --output HDMI-1 --auto --scale-from 1366x768 --output eDP-1 --auto --same-as HDMI-1"
 
-alias conup="nmcli con up"
+alias conup="nmcli con up --ask"
 alias condown="nmcli con down"
 
