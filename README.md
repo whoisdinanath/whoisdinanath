@@ -24,12 +24,12 @@ Welcome to my GitHub profile! I'm Bibek Poudel, a passionate engineer who loves 
 **Project Name:** Currently working on [something on networking and distributed system]
 ## 🌱 I’m currently learning...
 
-- Blockchain smart contract and web3 development
-- Networking and Distributed Systems
+- Exploring Golang
+- Distributed Systems
 
 ## 💬 Ask me about...
 
-- Backend development in Django, Network programming in C/C++, and Blockchain (DApps, Smart Contracts, etc.)
+- Backend development in Django, Network programming in C/C++
 
 ## 📫 How to reach me...
 
