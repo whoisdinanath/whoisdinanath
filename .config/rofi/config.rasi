@@ -1,0 +1,20 @@
+configuration {
+	show-icons: true;
+	drun-display-format: "{name}";
+	window-format: "{w} · {c} · {t}";
+	display-window: " Windows";
+	display-run: " Run";
+	display-ssh: " SSH";
+	display-drun: " Apps";
+	display-filebrowser: " Files";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "catppuccin"
