@@ -1,5 +1,6 @@
 # ~/.zshrc
 
+<<<<<<< HEAD
 #for scilab
 alias xcos="IBGL_ALWAYS_SOFTWARE=1 MESA_GL_VERSION_OVERRIDE=3.0 scilab"
 
@@ -9,11 +10,22 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export PATH="/home/bibek/.local/bin:$PATH"
 export PATH="/home/bibek/bin:$PATH"
 export PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH
+=======
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+  export FLYCTL_INSTALL="/home/bibek/.fly"
+  export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export PATH="/home/bibek/.local/bin:$PATH"
+export PATH="/home/bibek/bin:$PATH"
+>>>>>>> 6631689f46084f35a0c17c22b9f59b6a029895f6
 # tab case insensitive
 if [[ -n $commands[compaudit] ]]; then
   compaudit | xargs chmod g-w
 fi
+<<<<<<< HEAD
 . $HOME/.asdf/asdf.sh
+=======
+
+>>>>>>> 6631689f46084f35a0c17c22b9f59b6a029895f6
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
