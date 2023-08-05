@@ -86,13 +86,13 @@ keys = [
         # name the file in format year-month-day-hour-minute-second.png
         # save it to ~/Pictures/Screenshots
         # name of screenshot is the name of current window
-        lazy.spawn("scrot -s /home/bibek/pictures/Screenshots/Picture'%H%M%S.png'"),
+        lazy.spawn("scrot -s /home/bibek/Pictures/Screenshots/Picture'%H%M%S.png'"),
         desc='Take a screenshot'
 
     ),
     Key(
         [mod], "d",
-         lazy.spawn("scrot /home/bibek/pictures/Screenshots/Picture'%H%M%S.png'"),
+         lazy.spawn("scrot /home/bibek/Pictures/Screenshots/Picture'%H%M%S.png'"),
         desc='Take a screenshot'
     ),
     # Switch focus to specific monitor (out of three)
@@ -244,7 +244,7 @@ layouts = [
     layout.RatioTile(**layout_theme),
     layout.TreeTab(
         font="Ubuntu Bold",
-        fontsize=10,
+        fontsize=15,
         sections=["FIRST", "SECOND"],
         section_fontsize=10,
         border_width=2,
@@ -338,7 +338,7 @@ def init_widgets_list():
         # ),
 
         widget.GroupBox(
-            font="Ubuntu Bold",
+            font="Fira Code Nerd Font",
             fontsize=15,
             margin_y=3,
             margin_x=1,
@@ -381,15 +381,15 @@ def init_widgets_list():
             icon_size=12,
 
         ),
-        widget.Wallpaper(
-            directory=wallpaper,
-            random_selection=True,
-            foreground=colors[6],
-            background=colors[0],
-            label=' 󰸉 ',
-            fontsize=12,
-            padding=2,
-        ),
+        #widget.Wallpaper(
+        #    directory=wallpaper,
+        #    random_selection=True,
+        #    foreground=colors[6],
+        #    background=colors[0],
+        #    label=' 󰸉 ',
+        #    fontsize=12,
+        #    padding=2,
+        #),
 
         # widget.Net(
         #     interface="wlan0",
