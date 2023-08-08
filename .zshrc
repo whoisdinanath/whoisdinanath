@@ -6,7 +6,7 @@ alias xcos="IBGL_ALWAYS_SOFTWARE=1 MESA_GL_VERSION_OVERRIDE=3.0 scilab"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export FLYCTL_INSTALL="/home/bibek/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
-export PATH="/home/bibek/.local/bin:$PATH"
+export PATH="/home/bibek/.local/bin:/home/bibek/.local/bin/scripts:$PATH"
 export PATH="/home/bibek/bin:$PATH"
 export PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH
 # tab case insensitive

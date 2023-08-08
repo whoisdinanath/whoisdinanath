@@ -21,7 +21,7 @@ label=${chosen%%-*}
 link=${chosen##*- }
 
 # Open the selected link in the default web browser
-brave "$link"
+chromium "$link"
 
 # Print a message to the console
 echo "Opening $label ($link)"
