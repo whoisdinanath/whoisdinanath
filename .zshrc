@@ -32,7 +32,7 @@ fi
 # fi
 
 # aliases directory : ~/.config/scripts/bash/aliases.sh
-source ~/.config/scripts/bash/aliases.sh
+source ~/.local/bin/scripts/bash/aliases.sh
 
 eval "$(starship init zsh)"
 

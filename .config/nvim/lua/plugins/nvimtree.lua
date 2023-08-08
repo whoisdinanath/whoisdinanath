@@ -1,22 +1,35 @@
-local plugin = require "nvim-tree"
+local spec = {
+  "nvim-tree/nvim-tree.lua",
+  priority = 10000,
+  cmd = {"NvimTreeToggle", "NvimTreeFocus"},
 
-plugin.setup {
-    filters = {
+  dependeicies = {
+        "nvim-tree/nvim-web-devicons",
+  },
+
+
+}
+function spec:config()
+  local nvimtree= require("nvim-tree")
+
+  nvimtree.setup({
+        filters = {
         dotfiles = false,
         custom = { "^\\.git$" },
     },
     disable_netrw = true,
     hijack_netrw = true,
+    prefer_startup_root = true,
     hijack_cursor = true,
     hijack_unnamed_buffer_when_opening = false,
-    sync_root_with_cwd = true,
+    sync_root_with_cwd = false,
     hijack_directories = {
         enable = true,
         auto_open = false,
     },
     update_focused_file = {
         enable = true,
-        update_cwd = true,
+        update_cwd = false,
     },
     view = {
         adaptive_size = false,
@@ -40,7 +53,7 @@ plugin.setup {
             resize_window = true,
         },
         change_dir = {
-            enable = flase,
+            enable = false,
             global = false,
             restrict_above_cwd = true,
         },
@@ -95,5 +108,12 @@ plugin.setup {
             },
         },
     },
-}
+
+
+  })
+end
+
+return spec
+
+
 
