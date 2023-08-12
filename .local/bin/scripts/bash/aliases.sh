@@ -13,8 +13,11 @@ alias mappings="~/.config/scripts/bash/cat-mappings.sh"
 alias als="cat ~/.config/scripts/bash/aliases.sh"
 
 
-alias vim="nvim"
-alias svim="sudo nvim"
+alias nv="nvim"
+alias sv="sudo nvim"
+
+alias vi="vim"
+alias svi="sudo vim"
 
 # checking the uptime of the system in a human readable format string
 alias up="uptime -p"
