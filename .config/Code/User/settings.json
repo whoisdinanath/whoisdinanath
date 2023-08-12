@@ -1,0 +1,115 @@
+{
+  "editor.inlineSuggest.enabled": true,
+
+  "editor.fontWeight": "bold",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "window.openFoldersInNewWindow": "on",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true,
+    "cpp": true,
+    "shellscript": true,
+    "solidity": false,
+    "python": true,
+    "javascript": false,
+    "c": true,
+    "elixir": false,
+    "go": false
+  },
+  "editor.linkedEditing": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "django-html": "html"
+  },
+
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Google Sans Mono",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontFamily": "MesloLGMDZ Nerd Font Mono",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.letterSpacing": 0.5,
+  // "terminal.integrated.rendererType": "dom",
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  // },
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "git.autofetch": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "python.formatting.provider": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "workbench.colorCustomizations": {},
+  "terminal.external.linuxExec": "zsh",
+  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "terminal.explorerKind": "external",
+  "editor.codeActionsOnSave": {},
+  "cmake.cmakePath": "/usr/bin/cmake",
+  "fenix.repos": [
+    "https://raw.githubusercontent.com/FenixTemplates/Default/master/fenix.json",
+    "https://raw.githubusercontent.com/FenixTemplates/EasyCppProjects/master/fenix.json"
+  ],
+  "fenix.runCommands": "ask",
+  "hardhat.telemetry": true,
+  // "[c]": {
+  //   "editor.defaultFormatter": "ms-vscode.cpptools"
+  // },
+  "tabnine.experimentalAutoImports": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "git.suggestSmartCommit": false,
+  "cmake.configureOnOpen": true,
+  "solidity.telemetry": true,
+  "settingsSync.ignoredExtensions": [],
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "C_Cpp.intelliSenseCacheSize": 2048,
+  "hediet.vscode-drawio.resizeImages": null,
+  // for latex
+
+  // declare OUTPUT_DIR = "bin"
+
+  "latex-workshop.latex.recipe.default": "tectonic",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/bin",
+  "latex-workshop.view.pdf.viewer": "external",
+  "latex-workshop.view.pdf.external.viewer.command": "zathura",
+  // clean after build
+  "latex-workshop.latex.clean.command": "latexmk",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "tectonic",
+      "command": "tectonic",
+      "args": [
+        "--synctex",
+        "--keep-logs",
+        "--keep-intermediates",
+        "-o",
+        "%OUTDIR%",
+        "%DOC%.tex"
+      ],
+      "env": {}
+    }
+  ],
+
+
+  "elixirLS.autoBuild": false,
+  "elixirLS.autoInsertRequiredAlias": false,
+  "elixirLS.envVariables": {},
+  "elixirLS.dialyzerEnabled": false,
+  "arduino.useArduinoCli": true,
+  "extensions.ignoreRecommendations": true,
+  "workbench.startupEditor": "none",
+  "latex-workshop.latexindent.path": "",
+  "json.schemas": [],
+  "latex-workshop.latexindent.args": [],
+  "latex-workshop.message.error.show": false,
+  "haskell.manageHLS": "GHCup"
+}
