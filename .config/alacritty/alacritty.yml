@@ -60,7 +60,7 @@ font:
     builtin_box_drawing: true
 
 window:
-  opacity: 0.9
+  opacity: 0.5
 
   dimensions:
     columns: 112
@@ -84,7 +84,7 @@ key_bindings:
   - { key: C, mods: Control|Shift, action: Copy }
   - { key: Key0, mods: Control, action: ResetFontSize }
   - { key: Equals, mods: Control, action: IncreaseFontSize }
-  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  - { key: Minus, modcs: Control, action: DecreaseFontSize }
     # - { key: F11, command: { program: "/bin/sh", args: ["-c", "wmctrl -ir $(xdotool getwindowfocus) -b toggle,fullscreen" ] } }
 
 shell:
