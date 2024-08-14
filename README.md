@@ -37,7 +37,7 @@ I am passionate about programming and technology, committed to continuous learni
 - **Freelancer**  
   *Fiverr* (2021 - 2022)  
   - Developed an e-commerce website backend using Django and Django REST Framework.
-  - Automated tasks using Python scripts.
+  - Python automation scripts.
   <!-- - Assisted clients with various projects. -->
 
 - **Backend Developer**  
