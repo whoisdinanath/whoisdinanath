@@ -1,6 +1,6 @@
 # Hey
 
-Hi there. Here is [@whoisdinanath](<https://github.com/whoisdinanath>).
+Hi there. Here is [@whoisdinanath](<https://linkedin.com/in/whoisdinanath>).
 
 ## Personal Information
 
@@ -20,10 +20,7 @@ I am passionate about programming and technology, committed to continuous learni
 - Machine Learning
 - Distributed Systems & Designs
 - Hardware & Embedded Systems
-- Internet of Things (IoT)
-- Automation
-- Linux
-- Open Source
+- Linux & Open Source
 
 ## Education
 
@@ -70,12 +67,6 @@ I am passionate about programming and technology, committed to continuous learni
 - **Frameworks/Libraries**: Django, Django Rest Framework, Flask, FastAPI, React, Pytorch
 - **Tools**: Docker, Git, Linux
 - **Embedded Hardware**: Arduino, Raspberry Pi, ESP32, ESP8266
-
-## Languages
-
-- **Nepali**: Native
-- **English**: Fluent
-- **Hindi**: Fluent
 
 ## Memberships
 
