@@ -46,6 +46,7 @@ I am passionate about programming and technology, committed to continuous learni
   - Developing and maintaining Thapathali Campus’s official website.
   - Collaborating with a team for seamless front-end and back-end integration.
 
+<!--
 ## Extracurricular Activities
 
 - **Asian Hack 2022**  
@@ -58,16 +59,18 @@ I am passionate about programming and technology, committed to continuous learni
 
 - **Locus Project Demonstration, National Tech Fest 2023**  
   *Pulchowk Campus, Lalitpur*  
-  - 1st Position: Continued development of the "Universal Hand Gesture Decoder".
+  - 1st Position: Continued development of the "Universal Hand Gesture Decoder". 
+-->
 
 ## Technical Skills
 
 - **Programming Languages/Tools**: C, C++, Python, Golang, JavaScript, LaTeX, x86 Assembly, Bash
 - **Databases**: SQLite, PostgreSQL, MySQL, MongoDB (beginner)
-- **Frameworks/Libraries**: Django, Django Rest Framework, Flask, FastAPI, React, Pytorch
+- **Frameworks/Libraries**: Django, Django Rest Framework, Flask, FastAPI, React, Pytorch, NodeJS
 - **Tools**: Docker, Git, Linux
 - **Embedded Hardware**: Arduino, Raspberry Pi, ESP32, ESP8266
 
+<!--
 ## Memberships
 
-- **ECAST - Thapathali**: Hardware & Software Co-ordinator, President (Current)
+- **ECAST - Thapathali**: Hardware & Software Co-ordinator, President (Current) -->
