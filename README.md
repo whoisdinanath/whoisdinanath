@@ -1,6 +1,6 @@
 # Hey
 
-Hi there. Here is [@whoisdinanath](<https://linkedin.com/in/whoisdinanath>).
+Hi there. Here is [@whoisdinanath](<https://github.com/whoisdinanath>).
 
 ## Personal Information
 
@@ -18,9 +18,9 @@ I am passionate about programming and technology, committed to continuous learni
 
 - Backend Engineering
 - Machine Learning
-- Distributed Systems & Designs
 - Hardware & Embedded Systems
 - Linux & Open Source
+- Communication Systems & Networks
 
 ## Education
 
@@ -37,7 +37,7 @@ I am passionate about programming and technology, committed to continuous learni
 - **Freelancer**  
   *Fiverr* (2021 - 2022)  
   - Developed an e-commerce website backend using Django and Django REST Framework.
-  - Python automation scripts.
+  - Automated tasks using Python scripts.
   <!-- - Assisted clients with various projects. -->
 
 - **Backend Developer**  
@@ -46,7 +46,6 @@ I am passionate about programming and technology, committed to continuous learni
   - Developing and maintaining Thapathali Campus’s official website.
   - Collaborating with a team for seamless front-end and back-end integration.
 
-<!--
 ## Extracurricular Activities
 
 - **Asian Hack 2022**  
@@ -59,18 +58,25 @@ I am passionate about programming and technology, committed to continuous learni
 
 - **Locus Project Demonstration, National Tech Fest 2023**  
   *Pulchowk Campus, Lalitpur*  
-  - 1st Position: Continued development of the "Universal Hand Gesture Decoder". 
--->
+  - 1st Position: Continued development of the "Universal Hand Gesture Decoder".
 
 ## Technical Skills
 
 - **Programming Languages/Tools**: C, C++, Python, Golang, JavaScript, LaTeX, x86 Assembly, Bash
 - **Databases**: SQLite, PostgreSQL, MySQL, MongoDB (beginner)
-- **Frameworks/Libraries**: Django, Django Rest Framework, Flask, FastAPI, React, Pytorch, NodeJS
-- **Tools**: Docker, Git, Linux
+- **Frameworks/Libraries**: Django, Django Rest Framework, Flask, FastAPI, React, NumPy, Pandas, PyTorch
+- **Tools**: Docker, Git, Linux, Jupyter Notebook, Google Colab
 - **Embedded Hardware**: Arduino, Raspberry Pi, ESP32, ESP8266
 
-<!--
+## Projects Portfolio
+
+- [Thapathali Campus Website Backend API](https://tcioe.edu.np): Built with Django and Django REST Framework.
+- [Mental Health Support System Backend](https://github.com/sangam2121/zenithzone-backend): Built with Django & DRF.
+- [Decentralized Library Management System](https://github.com/whoisdinanath/bibliocrypt-v2): Using C++.
+- [Universal Hand Gesture Decoder](https://github.com/monoastro/hack-2022-theturingpoint-): Translating sign language into voice.
+- [Blind Guidance System](https://github.com/monoastro/handyCode): Detects obstacles and guides the blind using ultrasonic sensors.
+- [Django Developers Network Portal](https://github.com/whoisdinanath/django-developers-network-portal): A social media platform for developers to share projects and ideas.
+
 ## Memberships
 
-- **ECAST - Thapathali**: Hardware & Software Co-ordinator, President (Current) -->
+- **ECAST - Thapathali**: Hardware & Software Co-ordinator, President (Current)
