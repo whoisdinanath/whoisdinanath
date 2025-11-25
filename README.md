@@ -6,4 +6,5 @@ I’m always open to **projects, research, and innovative collaborations** in do
 
 **LinkedIn:** [linkedin.com/in/whoisdinanath](https://linkedin.com/in/whoisdinanath)
 
-[!Holopin Badges](https://holopin.me/whoisdinanath)](https://holopin.io/@whoisdinanath)
+[![Holopin Badges](https://holopin.me/whoisdinanath)](https://holopin.io/@whoisdinanath)
+
