@@ -5,3 +5,4 @@ I’m always open to **projects, research, and innovative collaborations** in do
 **Email:** [whoisdinanath@gmail.com](mailto:whoisdinanath@gmail.com)
 
 **LinkedIn:** [linkedin.com/in/whoisdinanath](https://linkedin.com/in/whoisdinanath)
+[!Holopin Badges](https://holopin.me/whoisdinanath)](https://holopin.io/@whoisdinanath)
